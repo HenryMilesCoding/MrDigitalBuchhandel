@@ -19,7 +19,7 @@ function App() {
       </div>
 
       <div className="row mx-5">
-      <button type="button" className="btn btn-primary">So bestellen</button>
+      <button type="button" className="btn btn-primary">Zusammenstellung bestellen</button>
       </div>
 
     </div>
