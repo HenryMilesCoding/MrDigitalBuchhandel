@@ -1,66 +1,17 @@
 import react from 'react';
+import Buch from './Buch';
 
 {/* Erzeugt die Form mit den Büchern */}
 const BuchListe = () => {
     return (
         <div>
+            <div className="text-center">Bitte treffen Sie Ihre Buchauswahl. Es wird immer der günstigste Preis für Sie berechnet.</div>
             <form>
-
-            <div className="card m-3">
-                <div className="card-header">Harry Potter 1</div>
-                <div className="card-body">Buchbeschreibung...</div>
-                
-                <div className="card-footer">
-                    Ich möchte davon
-                    <input className="mx-3" type="number" id="iAnzahlIn1" name="nAnnzahlIn1" min="1" max="10" />
-                    Stk. bestellen
-                </div>
-            </div>
-
-            <div className="card m-3">
-                <div className="card-header">Harry Potter 2</div>
-                <div className="card-body">Buchbeschreibung...</div>
-                
-                <div className="card-footer">
-                    Ich möchte davon
-                    <input className="mx-3" type="number" id="iAnzahlIn1" name="nAnnzahlIn1" min="1" max="10" />
-                    Stk. bestellen
-                </div>
-            </div>
-
-            <div className="card m-3">
-                <div className="card-header">Harry Potter 3</div>
-                <div className="card-body">Buchbeschreibung...</div>
-                
-                <div className="card-footer">
-                    Ich möchte davon
-                    <input className="mx-3" type="number" id="iAnzahlIn1" name="nAnnzahlIn1" min="1" max="10" />
-                    Stk. bestellen
-                </div>
-            </div>
-
-            <div className="card m-3">
-                <div className="card-header">Harry Potter 4</div>
-                <div className="card-body">Buchbeschreibung...</div>
-                
-                <div className="card-footer">
-                    Ich möchte davon
-                    <input className="mx-3" type="number" id="iAnzahlIn1" name="nAnnzahlIn1" min="1" max="10" />
-                    Stk. bestellen
-                </div>
-            </div>
-
-            <div className="card m-3">
-                <div className="card-header">Harry Potter 5</div>
-                <div className="card-body">Buchbeschreibung...</div>
-                
-                <div className="card-footer">
-                    Ich möchte davon
-                    <input className="mx-3" type="number" id="iAnzahlIn1" name="nAnnzahlIn1" min="1" max="10" />
-                    Stk. bestellen
-                </div>
-            </div>
-
+                <Buch teil="1"></Buch>
+                <Buch teil="2"></Buch>
+                <Buch teil="3"></Buch>
+                <Buch teil="4"></Buch>
+                <Buch teil="5"></Buch>
 
             </form>
         </div>

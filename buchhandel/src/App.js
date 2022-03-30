@@ -8,7 +8,6 @@ function App() {
 
       <div className="row mb-3">
         <div className="col-md-8">
-        Bitte treffen Sie Ihre Buchauswahl. Es wird immer der günstigste Preis für Sie berechnet.
 
         <BuchListe></BuchListe>
         </div>
