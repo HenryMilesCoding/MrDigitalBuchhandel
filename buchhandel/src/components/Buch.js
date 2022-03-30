@@ -1,5 +1,9 @@
 import React from "react";
 
+const MengeLesen = () => {
+    alert("Menge wurde erkannt");
+  }
+
 {/* Erzeugt die Form mit den Büchern */}
 const Buch = (props) => {
     return (
@@ -9,7 +13,7 @@ const Buch = (props) => {
                 
                 <div className="card-footer">
                     Ich möchte davon
-                    <input className="mx-3" type="number" id={ "Iteil"+props.teil } name={ "Nteil"+props.teil } min="0" max="10" />
+                    <input onChange={MengeLesen} className="mx-3" type="number" id={ "Iteil"+props.teil } name={ "Nteil"+props.teil } min="0" max="10" />
                     Stk. bestellen
                 </div>
             </div>
