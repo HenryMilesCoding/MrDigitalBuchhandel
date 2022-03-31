@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useRef} from "react";
+import * as ReactDOM from 'react-dom';
+import Preisanzeige from "./Preisanzeige";
 
-const MengeLesen = () => {
-    alert("Menge wurde erkannt");
-  }
+
+
+
+function MengeLesen (e) {
+    console.log(e.target.value + 'x Harry Potter ' + e.target.id);   
+}
 
 {/* Erzeugt die Form mit den Büchern */}
 const Buch = (props) => {
@@ -13,7 +18,7 @@ const Buch = (props) => {
                 
                 <div className="card-footer">
                     Ich möchte davon
-                    <input onChange={MengeLesen} className="mx-3" type="number" id={ "Iteil"+props.teil } name={ "Nteil"+props.teil } min="0" max="10" />
+                    <input onChange={MengeLesen} className="mx-3 buch" type="number" id={ props.teil } name={ "Nteil"+props.teil } min="0" max="10" />
                     Stk. bestellen
                 </div>
             </div>

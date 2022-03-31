@@ -1,6 +1,6 @@
-//import logo from './logo.svg';
 import './App.css';
 import BuchListe from './components/BuchListe';
+import Preisanzeige from './components/Preisanzeige';
 
 function App() {
   return (
@@ -8,12 +8,11 @@ function App() {
 
       <div className="row mb-3">
         <div className="col-md-8">
-
-        <BuchListe></BuchListe>
+          <BuchListe></BuchListe>
         </div>
 
-        <div className="col-md-4">Endpreis :
-        <h1 className="display-1" id="Preisanzeige">21.33</h1>
+      <div className="col-md-4">Endpreis :
+        <Preisanzeige preis="0.00"></Preisanzeige>
 
         <p className="lh-sm fs-6">Staffelung : <br />
         2 u. = 5%, 3 u. = 10%, 4 u. = 20%, 5 u. = 25%

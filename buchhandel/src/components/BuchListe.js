@@ -1,6 +1,10 @@
 import react from 'react';
 import Buch from './Buch';
 
+const handleSubmit = (prop) => {
+
+  }
+
 {/* Erzeugt die Form mit den Büchern */}
 const BuchListe = () => {
     return (
