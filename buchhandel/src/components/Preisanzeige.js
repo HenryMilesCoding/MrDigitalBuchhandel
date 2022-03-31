@@ -5,7 +5,7 @@ const Preisanzeige = (props) => {
     
     return (
     <div>
-    <h1 className="display-1" id="Preisanzeige">{props.preis} €</h1>
+    <h1 className="display-1" id="Preistaffel">{ props.preis }</h1>
     </div>
     );
   };
